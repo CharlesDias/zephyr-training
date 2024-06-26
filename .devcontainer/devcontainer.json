@@ -1,0 +1,6 @@
+{
+  "image": "docker.io/zephyrprojectrtos/zephyr-build:latest",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/zephyr-training/app,type=bind",
+  "workspaceFolder": "/zephyr-training",
+  "onCreateCommand": "bash -i /zephyr-training/app/.devcontainer/onCreateCommand.sh",
+}
